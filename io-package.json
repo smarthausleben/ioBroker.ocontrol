@@ -1,100 +1,100 @@
 {
-	"common": {
-		"name": "ocontrol",
-		"version": "0.0.1",
-		"news": {
-			"0.0.1": {
-				"en": "initial release",
-				"de": "Erstveröffentlichung",
-				"ru": "Начальная версия",
-				"pt": "lançamento inicial",
-				"nl": "Eerste uitgave",
-				"fr": "Première version",
-				"it": "Versione iniziale",
-				"es": "Versión inicial",
-				"pl": "Pierwsze wydanie",
-				"zh-cn": "首次出版"
-			}
-		},
-		"title": "oControl",
-		"titleLang": {
-			"en": "oControl",
-			"de": "oControl",
-			"ru": "oControl",
-			"pt": "oControl",
-			"nl": "oControl",
-			"fr": "oControl",
-			"it": "oControl",
-			"es": "oControl",
-			"pl": "oControl",
-			"zh-cn": "oControl"
-		},
-		"desc": {
-			"en": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"de": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"ru": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"pt": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"nl": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"fr": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"it": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"es": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"pl": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-			"zh-cn": "Adapter to get values from rurance control electronic oControl via blue-tooth"
-		},
-		"authors": [
-			"cmoehler <ccm@gmx.net>"
-		],
-		"keywords": [
-			"oControl",
-			"blue-tooth",
-			"adapter",
-			"iobroker",
-			"furance"
-		],
-		"license": "MIT",
-		"platform": "Javascript/Node.js",
-		"main": "main.js",
-		"icon": "ocontrol.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/cmoehler/ioBroker.ocontrol/master/admin/ocontrol.png",
-		"readme": "https://github.com/cmoehler/ioBroker.ocontrol/blob/master/README.md",
-		"loglevel": "info",
-		"mode": "daemon",
-		"type": "climate-control",
-		"compact": true,
-		"materialize": true,
-		"dependencies": [
-			{
-				"js-controller": ">=1.4.2"
-			}
-		]
-	},
-	"native": {
-		"option1": true,
-		"option2": "42"
-	},
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "info",
-			"type": "channel",
-			"common": {
-				"name": "Information"
-			},
-			"native": {}
-		},
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+    "common": {
+        "name": "ocontrol",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "oControl",
+        "titleLang": {
+            "en": "oControl",
+            "de": "oControl",
+            "ru": "oControl",
+            "pt": "oControl",
+            "nl": "oControl",
+            "fr": "oControl",
+            "it": "oControl",
+            "es": "oControl",
+            "pl": "oControl",
+            "zh-cn": "oControl"
+        },
+        "desc": {
+            "en": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "de": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "ru": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "pt": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "nl": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "fr": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "it": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "es": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "pl": "Adapter to get values from rurance control electronic oControl via blue-tooth",
+            "zh-cn": "Adapter to get values from rurance control electronic oControl via blue-tooth"
+        },
+        "authors": [
+            "cmoehler <ccm@gmx.net>"
+        ],
+        "keywords": [
+            "oControl",
+            "blue-tooth",
+            "adapter",
+            "iobroker",
+            "furance"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "ocontrol.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/cmoehler/ioBroker.ocontrol/master/admin/ocontrol.png",
+        "readme": "https://github.com/cmoehler/ioBroker.ocontrol/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "climate-control",
+        "compact": true,
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
 }
