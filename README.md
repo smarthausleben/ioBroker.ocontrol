@@ -12,7 +12,7 @@
 
 ## ocontrol adapter for ioBroker
 
-Adapter to get values from rurance control electronic oControl via blue-tooth
+Adapter to get values from furance control electronic oControl via blue-tooth
 
 
 ## Changelog
