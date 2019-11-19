@@ -14,7 +14,12 @@
 
 Adapter to get values from furance control electronic oControl via blue-tooth
 
+Prerequisites on Linux
 
+    * Needs Bluetooth development packages to build
+
+    apt-get install build-essential libbluetooth-dev
+    
 ## Changelog
 
 ### 0.0.1
