@@ -12,7 +12,7 @@
 
 ## ocontrol adapter for ioBroker
 
-Adapter to get values from furance control electronic oControl via blue-tooth
+Adapter to get values from 'oControl' furance control device using by bluetooth serial port of the device.  
 
 Prerequisites on Linux
 
