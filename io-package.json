@@ -70,8 +70,12 @@
         ]
     },
     "native": {
+        "full_logging": false,
         "option1": true,
-        "option2": "42"
+        "oControlMAC": "",
+        "oControlName": "",
+        "oControl_Data_Use_Interval": 60,
+        "oControl_Test_Number": 0
     },
     "objects": [],
     "instanceObjects": [
