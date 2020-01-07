@@ -10,7 +10,7 @@
 
 **Tests:**: [![Travis-CI](http://img.shields.io/travis/cmoehler/ioBroker.ocontrol/master.svg)](https://travis-ci.org/cmoehler/ioBroker.ocontrol)
 
-## ocontrol adapter for ioBroker
+## oControl adapter for ioBroker
 
 Adapter to get values from 'oControl' furance control device using by bluetooth serial port of the device.  
 
@@ -24,6 +24,7 @@ Prerequisites on Linux
 
 ### 0.0.1
 * (cmoehler) initial release
+* test
 
 ## License
 MIT License

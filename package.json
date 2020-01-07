@@ -1,6 +1,6 @@
 {
   "name": "iobroker.ocontrol",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adapter to get values from rurance control electronic oControl via blue-tooth",
   "author": {
     "name": "cmoehler",

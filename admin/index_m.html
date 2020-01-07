@@ -83,23 +83,23 @@
 			-->
 			<div class="col s6 input-field">
 				<input type="text" class="value" id="oControlMAC" />
-				<label for="oControlMAC" class="translate">Bluetooth MAC address oControl device (if empty, first found 'oControl' device will be used.)</label>
+				<label for="oControlMAC" class="translate">Bluetooth device MAC address (if empty, first found 'oControl' device will be used.)</label>
 			</div>
 			<div class="col s6 input-field">
 				<input type="text" class="value" id="oControlName" />
-				<label for="oControlName" class="translate">Name of bluetooth device (if empty, default name 'oControl' will be used.))</label>
+				<label for="oControlName" class="translate">Bluetooth device name (if empty, default name 'oControl' will be used.))</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col s6 input-field">
 				<input type="number" class="value" id="oControl_Data_Use_Interval" />
-				<label for="oControl_Data_Use_Interval" class="translate">time in seconds between data reading.</label>
+				<label for="oControl_Data_Use_Interval" class="translate">Update interval in seconds (minimu is 5 seconds. Default is 60 seconds.)</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col s6 input-field">
 				<input type="checkbox" class="value" id="full_logging" />
-				<label for="full_logging" class="translate">generates all log messages if checked</label>
+				<label for="full_logging" class="translate">generates debug messages</label>
 			</div>
 		</div>
 		<div class="row">
