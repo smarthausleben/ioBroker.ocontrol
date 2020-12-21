@@ -496,6 +496,8 @@ function bltFoundEvent(address, name) {
 
 	btSerial.findSerialPortChannel(address, function foundBltChanel(chanel) {
 		if (developerLogs) {
+			myAdapter.log.info('Variable bltFound: ' + bltFound.toString());
+			myAdapter.log.info('Found Address: ' + address.toString());
 			myAdapter.log.info('Found Chanel: ' + chanel.toString());
 		}
 		btSerial.connect(address, chanel, function connecttion() {
