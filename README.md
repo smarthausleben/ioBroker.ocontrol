@@ -10,19 +10,18 @@
 
 **Tests:**: [![Travis-CI](http://img.shields.io/travis/cmoehler/ioBroker.ocontrol/master.svg)](https://travis-ci.org/cmoehler/ioBroker.ocontrol)
 
-## oControl adapter for ioBroker
+## *oControl adapter for ioBroker*
 
 Adapter to get values from 'oControl' furance control device using by bluetooth serial port of the device.  
 
-###### Prerequisites on Linux
+## Prerequisites on Linux
 
-    * Needs Bluetooth development packages to build
+    Needs Bluetooth development packages to build
 
     apt-get install build-essential libbluetooth-dev
 
 
-###### oControl Hardware Device needs to be paired first in order to use the adapter!!!
-###### ================================================================================   
+## oControl Hardware Device needs to be paired first in order to use the adapter!!!
 
     Pair oControl using the Raspberry Command Line
 
@@ -61,6 +60,10 @@ Adapter to get values from 'oControl' furance control device using by bluetooth 
 ### 0.0.1
 * (cmoehler) initial release
 * test
+### 0.0.2
+* (cmoehler) second release
+* additional debug outputs
+* README updated
 
 ## License
 MIT License
