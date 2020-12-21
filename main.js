@@ -451,18 +451,27 @@ function interval_dataHandling_triggered() {
 }
 
 function start_handlingData_interval() {
+	if(developerLogs) {
+		myAdapter.log.info('start_handlingData_interval() hit');
+	}
 	// starting data handling interval
 	myHandleDataInterval = setInterval(interval_dataHandling_triggered, interval_data_use_millisec);
 	myAdapter.log.info("Data handling interval started");
 }
 
 function start_bltInquire_Interval() {
+	if(developerLogs) {
+		myAdapter.log.info('start_bltInquire_Interval() hit');
+	}
 	// starting bluetooth inquiering interval
 	myBltInquireInterval = setInterval(bltInquiering, interval_blt_inquire_millisec);
 	myAdapter.log.info("Bluetooth inquire started");
 }
 
 function bltInquiering() {
+	if(developerLogs) {
+		myAdapter.log.info('bltInquiering() hit');
+	}
 	// connect oControl via bluetooth
 	if(	inquireBlt_isrunning === false && bltFound === false) {
 		inquireBlt_isrunning = true;
@@ -473,23 +482,36 @@ function bltInquiering() {
 
 function bltFoundEvent(address, name) {
 	if (developerLogs) {
+		myAdapter.log.info('bltFoundEvent(address, name) hit');
 		myAdapter.log.info('btSerial found event...');
 	}
 	myAdapter.log.info('looking for \'' + controller_blt_name + '\'');
 	myAdapter.log.info('found Bluetooth Device, Address: ' + address.toString() + ' Name: ' + name.toString());
 	if (name !== controller_blt_name) {
+		if(developerLogs) {
+			myAdapter.log.info('bltFoundEvent - if (name !== controller_blt_name) ist wahr');
+		}
 		// nicht der richtige controller
 		myAdapter.log.info('not the one we are looking for');
 		return;
 	}
 	if (controller_blt_macAdress !== '') {
+		if(developerLogs) {
+			myAdapter.log.info('bltFoundEvent - if (controller_blt_macAdress !== ) ist wahr');
+		}
 		if (controller_blt_macAdress !== address.toString()) {
-			// falsche MAC Adresse
+			if(developerLogs) {
+				myAdapter.log.info('bltFoundEvent - if (controller_blt_macAdress !== address.toString()) ist wahr');
+			}
+				// falsche MAC Adresse
 			myAdapter.log.info('right controller name but wrong MAC-address.');
 			return;
 		}
 	}
 
+	if(developerLogs) {
+		myAdapter.log.info('bltFound wird auf true gesetzt');
+	}
 	bltFound = true;
 	myAdapter.log.info('stopping Bluetooth inquire');
 	clearInterval(myBltInquireInterval);
@@ -535,6 +557,9 @@ function bltFoundEvent(address, name) {
 
 function bltErrorEvent(err)
 {
+	if(developerLogs) {
+		myAdapter.log.info('bltErrorEvent(err) hit');
+	}
 
 	if(typeof err !== 'undefined' && err !== null) {
 		myAdapter.log.error('Error: ' + err.message);
@@ -549,12 +574,16 @@ function bltErrorEvent(err)
 }
 
 function bltFinishedEvent(address, name){
+	if(developerLogs) {
+		myAdapter.log.info('bltFinishedEvent(address, name) hit');
+	}
 	myAdapter.log.info('inquiry execution did finish');
 	inquireBlt_isrunning = false;
 }
 
 function handleData(rx_data) {
 	if(developerLogs) {
+		myAdapter.log.info('handleData(rx_data) hit');
 		myAdapter.log.info(rx_data.toString());
 	}
 	var packages = rx_data.split('\n');
@@ -620,6 +649,9 @@ function handleData(rx_data) {
 // Diese Funktion wandelt die übergebenen Sekunden in eine
 // Zeitdauer String um "00:00:00" und gibt ihn zurück
 function secondsToDuration(seconds){
+	if(developerLogs) {
+		myAdapter.log.info('secondsToDuration(seconds) hit');
+	}
 	const secsMinute = 60;
 	const secsHour = 3600;
 	var receivedSeconds = 0;
@@ -643,6 +675,9 @@ function secondsToDuration(seconds){
 // Diese Funktion erwartet den Ofenstatus als Zahl 'oControlValues.S'
 // und gibt den Status in klartext zurück
 function numberStatusToTxt(numberStatus) {
+	if(developerLogs) {
+		myAdapter.log.info('numberStatusToTxt(numberStatus) hit');
+	}
 	switch (numberStatus) {
 		case 0:
 			return oControlStatusTxt_de.S0;
@@ -673,6 +708,9 @@ btSerial.on('failure', bltErrorEvent);
 var testVar_number = 0;
 // Funktion um Tests auszuführen
 function test_function() {
+	if(developerLogs) {
+		myAdapter.log.info('test_function() hit');
+	}
 	myAdapter.log.info('test_function line 1');
 	if (typeof myAdapter.config.oControl_Test_Number !== 'undefined' && myAdapter.config.oControl_Test_Number !== null) {
 
