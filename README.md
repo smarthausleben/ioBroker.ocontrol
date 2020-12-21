@@ -14,15 +14,15 @@
 
 Adapter to get values from 'oControl' furance control device using by bluetooth serial port of the device.  
 
-Prerequisites on Linux
+# Prerequisites on Linux
 
     * Needs Bluetooth development packages to build
 
     apt-get install build-essential libbluetooth-dev
 
 
-oControl Hardware Device needs to be paired first in order to use the adapter!!!
-================================================================================   
+# oControl Hardware Device needs to be paired first in order to use the adapter!!!
+# ================================================================================   
 
     Pair oControl using the Raspberry Command Line
 
