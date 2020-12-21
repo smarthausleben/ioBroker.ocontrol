@@ -411,7 +411,7 @@ class Ocontrol extends utils.Adapter {
 function main(){
 	if(developerLogs) {
 		myAdapter.log.info('main() hit');
-		test_function();
+		// test_function();
 	}
 	start_bltInquire_Interval();
 
