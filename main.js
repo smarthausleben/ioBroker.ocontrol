@@ -560,6 +560,9 @@ function handleData(rx_data) {
 
 		if(packages[i].startsWith(messageBegin + monoxidIdentifier) && packages[i].length === coPackageLength && gotCoPackage === false)
 		{
+			if(developerLogs) {
+			myAdapter.log.info("got CO Package: " + packages[i].toString());
+			}
 			gotCoPackage = true;
 			oControlValues.CO = parseInt(packages[i].substr(5,3).trim());
 			oControlValues.Flap = parseInt(packages[i].substr(10,3).trim());
@@ -569,6 +572,9 @@ function handleData(rx_data) {
 		}
 		else if(packages[i].startsWith(messageBegin + timeIdentifier) && packages[i].length === tiPackageLength  && gotTIPackage === false)
 		{
+			if(developerLogs) {
+			myAdapter.log.info("got TI Package: " + packages[i].toString());
+			}
 			gotTIPackage = true;
 			oControlValues.TimeSec = parseInt(packages[i].substr(5,5).trim());
 			oControlValues.EGTemp = parseInt(packages[i].substr(13,3).trim());
@@ -577,10 +583,16 @@ function handleData(rx_data) {
 		else
 		{
 			// Kein brauchbares Packet
+			if(developerLogs) {
+			myAdapter.log.info("bad data!!");
+			}
 			// console.log(i.toString() + ': ' + "Unbekanntes Packet");
 		}
 
 		if(gotCoPackage === true && gotTIPackage === true) {
+			if(developerLogs) {
+			myAdapter.log.info("got All Packages");
+			}
 			// Flags zurücksetzen
 			gotCoPackage = false;
 			gotTIPackage = false;
