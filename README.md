@@ -19,6 +19,42 @@ Prerequisites on Linux
     * Needs Bluetooth development packages to build
 
     apt-get install build-essential libbluetooth-dev
+
+
+oControl Hardware Device needs to be paired first in order to use the adapter!!!
+================================================================================   
+
+    Pair oControl using the Raspberry Command Line
+
+    1. on the Rasperry running ioBroker enter 'bluetoothctl' to open Bluetooth control
+
+    2. At the [bluetooth]# prompt enter the following commands:
+        discoverable on
+        pairable on
+        agent on
+        default-agent
+        scan on
+
+    3. Wait for a message to appear showing the oControl has been found:
+     ... Device 00:12:6F:34:6D:0F ...
+
+    4. Type pair with the mac address of the oControl:
+        pair 00:12:6F:34:6D:0F
+
+        you should see: Attempting to pair with 00:12:6F:34:6D:0F
+                        Request PIN code
+    
+    5. Enter the correct PIN code (see oControl Software Dokumentation)
+        [agent] Enter PIN code: ***
+        
+    6. oControl paireing process should look similar to this            .
+        [CHG] Device 00:12:6F:34:6D:0F UUIDs: 00001101-0000-1000-8000-00805f9b34fb
+        [CHG] Device 00:12:6F:34:6D:0F ServicesResolved: yes
+        [CHG] Device 00:12:6F:34:6D:0F Paired: yes
+        Pairing successful
+
+    7. After successfull pairing your oControl hardware with the Raspberry, you can start the oControl adapter
+
     
 ## Changelog
 

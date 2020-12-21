@@ -522,13 +522,15 @@ function bltFoundEvent(address, name) {
 			myAdapter.log.info('Found Address: ' + address.toString());
 			myAdapter.log.info('Found Chanel: ' + chanel.toString());
 		}
+		// function foundBltChanel(chanel)
 		btSerial.connect(address, chanel, function connecttion() {
 			if (developerLogs) {
 				myAdapter.log.info('btSerial.connect(address, chanel, function connecttion() hit');
 				myAdapter.log.info('btSerial.connect - Found Address: ' + address.toString());
 				myAdapter.log.info('btSerial.connect - Found Chanel: ' + chanel.toString());
 			}
-				myAdapter.log.info('successfully connected to ' + name + ' (MAC: ' + address + ') chanel: ' + chanel.toString());
+			
+			myAdapter.log.info('successfully connected to ' + name + ' (MAC: ' + address + ') chanel: ' + chanel.toString());
 			// Reset the connection indicator during startup
 			myAdapter.setStateAsync('info.connection', true, true);
 			blt_connected = true;
