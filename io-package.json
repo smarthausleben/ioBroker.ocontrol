@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "ocontrol",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "news": {
             "0.0.1": {
                 "en": "initial release",
@@ -30,16 +30,8 @@
             "zh-cn": "oControl"
         },
         "desc": {
-            "en": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "de": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "ru": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "pt": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "nl": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "fr": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "it": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "es": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "pl": "Adapter to get values from rurance control electronic oControl via blue-tooth",
-            "zh-cn": "Adapter to get values from rurance control electronic oControl via blue-tooth"
+            "en": "Adapter to get sensor values from furance control electronic oControl via blue-tooth",
+            "de": "Adapter um Daten derr Ofensteuerung 'oControl' über Bluetooth auszulesen"
         },
         "authors": [
             "cmoehler <ccm@gmx.net>"
@@ -59,6 +51,7 @@
         "extIcon": "https://raw.githubusercontent.com/cmoehler/ioBroker.ocontrol/master/admin/ocontrol.png",
         "readme": "https://github.com/cmoehler/ioBroker.ocontrol/blob/master/README.md",
         "loglevel": "info",
+        "localLink": "%web_protocol%://%ip%:%web_port%/ocontrol/index.html",
         "mode": "daemon",
         "type": "climate-control",
         "compact": true,
@@ -73,7 +66,7 @@
         "full_logging": false,
         "option1": true,
         "oControlMAC": "",
-        "oControlName": "",
+        "oControlName": "oControl",
         "oControl_Data_Use_Interval": 60,
         "oControl_Test_Number": 0
     },
