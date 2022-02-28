@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\ISSUE_TEMPLATE",
+    "\\admin"
   ],
-  "SelectedNode": "\\D:\\Privat\\Villa Dornröschen\\ioBroker\\ocontrol Adapter Source\\iobroker.ocontrol",
+  "SelectedNode": "\\main.js",
   "PreviewInSolutionExplorer": false
 }
