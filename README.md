@@ -10,7 +10,11 @@
 
 **Tests:**: [![Travis-CI](http://img.shields.io/travis/cmoehler/ioBroker.ocontrol/master.svg)](https://travis-ci.org/cmoehler/ioBroker.ocontrol)
 
+<<<<<<< Updated upstream
 ## *oControl adapter for ioBroker*
+=======
+## oControl adapter for ioBroker
+>>>>>>> Stashed changes
 
 Adapter to get values from 'oControl' furance control device using by bluetooth serial port of the device.  
 
