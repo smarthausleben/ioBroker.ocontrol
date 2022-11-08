@@ -72,7 +72,7 @@ Adapter to get values from 'oControl' furance control device using by bluetooth 
 ## License
 MIT License
 
-Copyright (c) 2019 cmoehler <ccm@gmx.net>
+Copyright (c) 2019 cmoehler <info@smarthausleben.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
